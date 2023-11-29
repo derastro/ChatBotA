@@ -38,11 +38,15 @@ def send_prompts():
             send_email(email, "Morning Check-In", f"Hi {name}, {morning_prompt}")
             print(f"Morning prompt sent to {email}")
 
-            # Schedule evening prompt
+            # Schedule evening prompt 
             # schedule.every().day.at("09:52").do(send_email, email, "Evening Check-Out", f"Hi {name}, {evening_prompt}")
         
     except Exception as e:
         print(f"error {e}")
+
+        print("habibi")
+        print("al-habibi")
+
 
 schedule.every().minutes.do(send_prompts)
 # send_prompts
